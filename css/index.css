@@ -1,9 +1,17 @@
 body {
     font-family: 'tt_norms',Arial,Helvetica,sans-serif;
     box-sizing: border-box;
+    text-align: center;
+    color: rgb(89, 89, 89);
 }   
+
 input[type=text] {
     width: 30%;
     padding: 12px 20px;
     margin: 8px 0;
  }
+
+ .header {
+     font-size: .8em;
+ }
+

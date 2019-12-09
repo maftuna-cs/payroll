@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Payroll Calculator</title>
-    <link rel="stylesheet" href="css/index.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Payroll Calculator</title>
+        <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <section>
-        <div>
+        <header class="header">
+                <h1>ABC College Payroll Calculator</h1>
+        </header>
+        <section>
+                <div>
 
-            <div>
-                    <label>Enter Employee Number</label><br><br>
-                    <input type="text"id="txtNum"><br><br>
-                    <label>Enter Employee Name</label><br><br>
-                    <input type="text"id="txtName"><br><br>
-                    <label>Enter Hours Work</label><br><br>
-                    <input type="text"id="txtHours"><br><br>
-            </div>
-            <div>
-                    <label>Enter Employee Code:</label><br><br>
-                    <input type="text"id="txtCode"><br><br>
-                    <label>M</label>
-                    <input type="radio" name="chooseCode" id="chooseMaster">
-                    <label>B</label>
-                    <input type="radio" name="chooseCode" id="chooseBachelor"><br><br>
-            </div>
-            <div>
-                    <label>Enter Fixed Salary</label><br><br>
-                    <input type="text"id="txtFixSal"><br><br>
-            </div>
-            
+                        <div>
+                                <label>Enter Employee Number</label><br><br>
+                                <input type="text" id="txtNum"><br><br>
+                                <label>Enter Employee Name</label><br><br>
+                                <input type="text" id="txtName"><br><br>
+                                <label>Enter Hours Work</label><br><br>
+                                <input type="text" id="txtHours"><br><br>
+                        </div>
+                        <div>
+                                <label>Enter Employee Code:</label><br><br>
+                                <input type="text" id="txtCode"><br><br>
+                                <label>M</label>
+                                <input type="radio" name="chooseCode" id="chooseMaster">
+                                <label>B</label>
+                                <input type="radio" name="chooseCode" id="chooseBachelor"><br><br>
+                        </div>
+                        <div>
+                                <label>Enter Fixed Salary</label><br><br>
+                                <input type="text" id="txtFixSal"><br><br>
+                        </div>
 
-            <input type="button" id="btn" value="Check">
-        </div> 
-     </section>
-     
-     <section class="result">
-             <dl>
-               <dt>Gross Salary:</dt>
-               <dd id="grosSal"></dd>
-               <dt>Income Tax:</dt>
-               <dd id="incomeTax"></dd>
-               <dt>Health Fee:</dt>
-               <dd id="healthFee"></dd>
-               <dt>Total:</dt>
-               <dd id="total"></dd> 
-             </dl>    
-     </section>
-<script src="js/index.js"></script>
+
+                        <input type="button" id="btn" value="Check">
+                </div>
+        </section>
+
+        <section class="result">
+                <dl>
+                        <dt>Gross Salary:</dt>
+                        <dd id="grosSal"></dd>
+                        <dt>Income Tax:</dt>
+                        <dd id="incomeTax"></dd>
+                        <dt>Health Fee:</dt>
+                        <dd id="healthFee"></dd>
+                        <dt>Total:</dt>
+                        <dd id="total"></dd>
+                </dl>
+        </section>
+        <script src="js/index.js"></script>
 </body>
+
 </html>
