@@ -2,16 +2,35 @@ body {
     font-family: 'tt_norms',Arial,Helvetica,sans-serif;
     box-sizing: border-box;
     text-align: center;
-    color: rgb(89, 89, 89);
+    color: rgb(122, 121, 121);
+    background: rgb(250, 245, 232);
 }   
 
 input[type=text] {
     width: 30%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: .75em 1.25em;
+    margin: .5em 0;
  }
 
  .header {
      font-size: .8em;
+     color: #EB5757;
  }
+
+ .calc-btn {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    height: 2em;
+    width: 8em;
+    margin-top: 1.2em;
+  } 
+  
+  .calc-btn:hover {
+    background-color: rgb(182, 3, 3); 
+  }
+  
+
 
