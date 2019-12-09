@@ -6,7 +6,9 @@ function calc() {
     let hrs = parseInt(document.getElementById("txtHours").value);
     let empCode = parseInt(document.getElementById("txtCode").value); 
     let master = parseInt(document.getElementById("chooseFaculty").value);
-    let bachelor = parseInt(document.getElementById("chooseRegular").value); 
+    let bachelor = parseInt(document.getElementById("chooseRegular").value);
+    let fixedSal = parseInt(document.getElementById("txtFixSal").value);
+    let empType;
     let incomeTax;    
 
     if(empCode == 'f' || empCode == 'F' ) {
@@ -23,27 +25,29 @@ function calc() {
         grosSalary = hrs * perHour + allowance;
 
         if (grosSalary > 3000) {
-            incomeTax = (grosSalary - 2500) * .25;
-            health = 33; 
-            net = grosSalary - incomeTax - health ;
+            incomeTax = (.25/grosSalary)*100;
         }
   
-        else if (gross_sal > 2500 && gross_sal < 3000) {
-            income_tax = (gross_sal - 2500) * 0.25;
-            health = 19.20;
-            net = gross_sal - income_tax - health;
-            paySlip();
+        else if (gross_sal = 2500) {
+            income_tax = 'tax free';
         }
   
-        else if (gross_sal < 2500) {
-            income_tax = "No Income tax deducted."
-            health = 19.20;
-            net = gross_sal - health;
-            paySlip();
+        if (gross_sal > 3000) {
+            healthFee = 33;
         }
-    
+        else {
+            healthFee = 19.2;
     }
+    netPay = (hrs * perHour + allowance) - (healthFee + incomeTax);
+
+    if (empCode == 'R' || empCode == 'r' )
+    //enter working hour for 'regular'
+    if (hrs == 160) {
+        grosSalary = fixedSal;
+    }
+    else if ()
     
-    
+
     
 }
+
