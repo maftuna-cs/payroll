@@ -9,7 +9,13 @@ function calc() {
     let bachelor = parseInt(document.getElementById("chooseRegular").value);
     let fixedSal = parseInt(document.getElementById("txtFixSal").value);
     let staff;
-    let incomeTax;    
+    let perHour;
+    let allowance;
+    let grosSalary;
+    let incomeTax;
+    let healthFee;
+    let netPay;
+    let staff;    
 
     if(empCode == 'f' || empCode == 'F') {
     staff = 'faculty';
@@ -66,7 +72,7 @@ function calc() {
     }
 
     else if (grosSalary = 2500) {
-        income_tax = 'tax free';
+        incomeTax = 'tax free';
     }
 
     if (grosSalary > 3000) {
@@ -77,6 +83,13 @@ function calc() {
 }
 netPay = grosSalary - (healthFee + incomeTax);       
 }
-
+let calcGrosSal = document.getElementById('grosSal');
+calcGrosSal.innerHTML=`${grosSalary}`;
+let calcIncomeTax = document.getElementById('incomeTax');
+calcGrosSal.innerHTML=`${incomeTax}`;
+let calcHealthFee = document.getElementById('healthFee');
+calcGrosSal.innerHTML=`${healthFee}`;
+let calcTotal = document.getElementById('total');
+calcGrosSal.innerHTML=`${netPay}`;
 }
 button.addEventListener('click',calc);
