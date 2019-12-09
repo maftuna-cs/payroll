@@ -32,14 +32,10 @@ function calc() {
         
         //taxFee
         if (grosSalary > 3000) {
-            incomeTax = (.25/grosSalary)*100;
+            incomeTax = ((.25/grosSalary)*100)-2500;
         }
   
-        else if (gross_sal = 2500) {
-            income_tax = 'tax free';
-        }
-  
-        if (gross_sal > 3000) {
+        if (grosSalary > 3000) {
             healthFee = 33;
         }
         else {
