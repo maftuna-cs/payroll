@@ -11,7 +11,7 @@ function calc() {
     let empType;
     let incomeTax;    
 
-    if(empCode == 'f' || empCode == 'F' ) {
+    if(empCode == 'f' || empCode == 'F') {
     
         if(master.checked) {
             perHour = 175;
@@ -41,13 +41,21 @@ function calc() {
     netPay = (hrs * perHour + allowance) - (healthFee + incomeTax);
 
     if (empCode == 'R' || empCode == 'r' )
-    //enter working hour for 'regular'
+    //enter working hour for 'regular' 
     if (hrs == 160) {
         grosSalary = fixedSal;
+        
     }
-    else if ()
+    else if (hrs < 160) {
+        hrlyRate = fixedSal/160;
+        proRate = hrlyRate * hrs;
+    }
+    
+    else if (hrs > 160) {
+        overRate = (hrs - 160)*2;
+    }
     
 
     
 }
-
+}
