@@ -1,0 +1,9 @@
+body {
+    font-family: 'tt_norms',Arial,Helvetica,sans-serif;
+    box-sizing: border-box;
+}   
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+ }
