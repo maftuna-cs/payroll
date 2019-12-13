@@ -77,11 +77,22 @@ function enterInfo() {
         document.getElementById("generatedIncomeTax").value = "$ " + incomeTax;
         document.getElementById("generatedHealthFee").value = "$ " + healthFee;
         document.getElementById("generatedTotalSal").value = "$ " + netPay;
-
-    }
-
+     }
 }
-
 
 let btn = document.getElementById("check");
 btn.addEventListener("click", enterInfo);
+
+function myFunction() {
+    document.getElementById("hidden").style.display = "block";
+  }
+
+// return `
+//      <div>
+//      <p>Employee Name:</p><br><br>
+//      <p id="generatedNumber">Employee number:</p><br><br>
+//      <p id="generatedCode">Qualification Code:</p><br><br>
+//       <p id="generatedDep">Employee Department:</p><br><br>
+//       <p id="generatedHrs">Number of hours worked:</p><br><br>
+//       </div>`
+       
