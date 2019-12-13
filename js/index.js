@@ -40,11 +40,11 @@ function enterInfo() {
             grosSal = fixSal;   //if a Regular worker works 160 hours for the month then they would be paid flat fixed salary
         } else if (hours < 160) { //prorated = (fixSal / 160) * hours
             grosSal = perHour * hours;
-        } else  { //over time = ((fixedSalary/160)*hours)*(hours-160)*2
+        } else { //over time = ((fixedSalary/160)*hours)*(hours-160)*2
             overTime = hours - 160;
             grosSal = overTime * (perHour * 2) + (perHour * 160);
         }
-        getDeduction(); 
+        getDeduction();
     }
 
 
@@ -53,15 +53,15 @@ function enterInfo() {
             incomeTax = (grosSal - 2500) * 0.25;
             healthFee = 33; //per month then their health surcharge fee would be  $33.00.
             netPay = grosSal - (incomeTax + healthFee);
-        } else if (grosSal <=3000) { //If an employee earns $3000.00 or less than
+        } else if (grosSal <= 3000) { //If an employee earns $3000.00 or less than
             incomeTax = (grosSal - 2500) * 0.25;
             healthFee = 19.20; //then their health surcharge fee would be $19.20.
             netPay = (incomeTax + healthFee) - grosSal;
-         } else if (grosSal <= 2500) {
+        } else if (grosSal <= 2500) {
             incomeTax = "Tax Free"
             healthFee = 19.20;
             netPay = grosSal - healthFee;
-         }
+        }
         paySlip();
 
     }
@@ -77,7 +77,7 @@ function enterInfo() {
         document.getElementById("generatedIncomeTax").value = "$ " + incomeTax;
         document.getElementById("generatedHealthFee").value = "$ " + healthFee;
         document.getElementById("generatedTotalSal").value = "$ " + netPay;
-     }
+    }
 }
 
 let btn = document.getElementById("check");
@@ -85,7 +85,7 @@ btn.addEventListener("click", enterInfo);
 
 function myFunction() {
     document.getElementById("hidden").style.display = "block";
-  }
+}
 
 // return `
 //      <div>
@@ -95,4 +95,3 @@ function myFunction() {
 //       <p id="generatedDep">Employee Department:</p><br><br>
 //       <p id="generatedHrs">Number of hours worked:</p><br><br>
 //       </div>`
-       
