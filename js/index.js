@@ -1,4 +1,4 @@
-let.button = getElementById('btn');
+// let.button = getElementById('btn');
 
 function calc() {
     let num = parseInt(document.getElementById("txtNum").value);
