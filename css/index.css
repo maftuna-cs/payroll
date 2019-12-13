@@ -1,9 +1,9 @@
 body {
-    font-family: 'tt_norms',Arial,Helvetica,sans-serif;
-    box-sizing: border-box;
-    text-align: center;
-    color: rgb(122, 121, 121);
-    background: white;
+  font-family: 'tt_norms',Arial,Helvetica,sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  color: rgb(122, 121, 121);
+  background: white;
 } 
 h1 {
   background-color: #688882;
@@ -18,8 +18,8 @@ h1 {
 }  
 
  .header {
-     font-size: .8em;
-     color: #EB5757;
+  font-size: .8em;
+  color: #EB5757;
  }
 
  .info-display {
@@ -33,17 +33,17 @@ h1 {
 }
 
  .info-form input[type=text] {
-  width:100%;
-  padding: 1.6em 1.25em;
-  margin: .5em 0;
-  border-radius: 1.2em;
-  border: none;
-  box-shadow: 0 0 .1em rgba(99, 123, 128, 0.4);
-  font-size: 1em;
+   width:100%;
+   padding: 1.6em 1.25em;
+   margin: .5em 0;
+   border-radius: 1.2em;
+   border: none;
+   box-shadow: 0 0 .1em rgba(99, 123, 128, 0.4);
+   font-size: 1em;
 }
 .info-txt {
-  font-size: 1.3em;
-  color: #2f4641
+   font-size: 1.3em;
+   color: #2f4641
 }
 
  .calc-btn {
